@@ -27,6 +27,7 @@ public class EstoqueMain {
 		
 		System.out.println(e1.mostra());
 	
+		e1.precisaRepor();
 		
 		
 	}

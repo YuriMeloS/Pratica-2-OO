@@ -53,8 +53,10 @@ public class Estoque {
 	
 	public boolean precisaRepor() {
 		if(qtdAtual<=qtdMinima) {
+			System.out.println("Precisa repor");
 			return true;
 		}else {
+			System.out.println("Não precisa repor");
 			return false;
 		}
 	}
