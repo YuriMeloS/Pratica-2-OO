@@ -43,14 +43,12 @@ public class Estoque {
 	}
 	
 	public void darBaixa(int qtde) {
-		System.out.println("Insira a quantidade do estoque");
-		qtdAtual = ler.nextInt();
-		if(qtdAtual<0) {
-			System.out.println("Insira um valor válido");
-		}
+		if ((qtdAtual- qtde)>=0 )
+				qtdAtual = qtdAtual - qtde;
+		
 	}
 	public String mostra() {
-		return ("Nome do prouto "+nome+" sua quantidade "+qtdAtual+" sua quantidade minima "+qtdMinima);
+		return ("Nome do produto " + nome + " sua quantidade " + qtdAtual + " sua quantidade minima " + qtdMinima);
 	}
 	
 	public boolean precisaRepor() {
@@ -61,6 +59,12 @@ public class Estoque {
 		}
 	}
 	
-
-	
 }
+
+
+
+
+
+
+
+
